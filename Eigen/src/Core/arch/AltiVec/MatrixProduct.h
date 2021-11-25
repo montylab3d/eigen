@@ -28,6 +28,10 @@
 #endif
 #endif
 
+#ifdef __PPC64__
+#define EIGEN_ALTIVEC_DISABLE_MMA
+#endif
+
 #ifdef __has_builtin
 #if __has_builtin(__builtin_mma_assemble_acc)
   #define ALTIVEC_MMA_SUPPORT
