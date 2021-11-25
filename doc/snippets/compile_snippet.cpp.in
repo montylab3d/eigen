@@ -11,6 +11,7 @@ static bool eigen_did_assert = false;
 
 using namespace Eigen;
 using namespace std;
+using Eigen::placeholders::all;
 
 int main(int, char**)
 {
