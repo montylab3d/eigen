@@ -18,12 +18,12 @@
 %endif
 
 Name:           eigen3
-Version:        3.4.90
-Release:        bleed_{{{git_head_short}}}%{?dist}
+Version:        {{{git_last_tag}}}.bleed^{{{git_last_tag_commits}}}.{{{git_head_short}}}
+Release:        1%{?dist}
 Summary:        A lightweight C++ template library for vector and matrix math
 
 License:        MPLv2.0 and LGPLv2+ and BSD and Minpack
-URL:            http://eigen.tuxfamily.org/index.php?title=Main_Page
+URL:            https://github.com/montylab3d/eigen
 Source0:        {{{ git_repo_pack }}}
 
 BuildRequires:  %{blaslib}-devel
